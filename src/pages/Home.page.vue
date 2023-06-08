@@ -8,7 +8,7 @@ import { config } from '@/config';
 
 const toolStore = useToolStore();
 
-useHead({ title: 'IT Tools - Handy online tools for developers' });
+useHead({ title: 'Tooly - Handy dev tools' });
 </script>
 
 <template>
@@ -16,20 +16,20 @@ useHead({ title: 'IT Tools - Handy online tools for developers' });
     <div class="grid-wrapper">
       <n-grid v-if="config.showBanner" x-gap="12" y-gap="12" cols="1 400:2 800:3 1200:4 2000:8">
         <n-gi>
-          <ColoredCard title="You like it-tools?" :icon="Heart">
+          <ColoredCard title="Like Tooly?" :icon="Heart">
             Give us a star on
             <a
-              href="https://github.com/CorentinTh/it-tools"
+              href="https://github.com/Gyarbij/tooly"
               rel="noopener"
               target="_blank"
-              aria-label="IT-Tools' GitHub repository"
+              aria-label="Tooly' GitHub repository"
             >GitHub</a>
             or follow us on
             <a
-              href="https://twitter.com/ittoolsdottech"
+              href="https://twitter.com/gyarbij"
               rel="noopener"
               target="_blank"
-              aria-label="IT-Tools' Twitter account"
+              aria-label="Gyarbij Twitter"
             >Twitter</a>! Thank you
             <n-icon :component="Heart" />
           </ColoredCard>
