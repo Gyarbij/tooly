@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { type FormatFnOptions, format as formatSQL } from 'sql-formatter';
-import { computed, reactive, ref } from 'vue';
 import TextareaCopyable from '@/components/TextareaCopyable.vue';
 import { useStyleStore } from '@/stores/style.store';
 
@@ -65,16 +64,17 @@ const prettySQL = computed(() => formatSQL(rawSQL.value, config));
   </div>
 
   <n-form-item label="Your SQL query">
-    <n-input
+    <c-input-text
       ref="inputElement"
       v-model:value="rawSQL"
       placeholder="Put your SQL query here..."
-      type="textarea"
       rows="20"
+      multiline
       autocomplete="off"
       autocorrect="off"
       autocapitalize="off"
       spellcheck="false"
+      monospace
     />
   </n-form-item>
   <n-form-item label="Prettify version of your query">

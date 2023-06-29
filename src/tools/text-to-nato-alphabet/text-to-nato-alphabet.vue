@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue';
 import { textToNatoAlphabet } from './text-to-nato-alphabet.service';
 import { useCopy } from '@/composable/copy';
 
@@ -19,9 +18,9 @@ const { copy } = useCopy({ source: natoText, text: 'NATO alphabet string copied.
     />
 
     <div v-if="natoText">
-      <n-text mb-1 block>
+      <div mb-2>
         Your text in NATO phonetic alphabet
-      </n-text>
+      </div>
       <c-card>
         {{ natoText }}
       </c-card>

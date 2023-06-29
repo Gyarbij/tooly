@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import { NIcon, useThemeVars } from 'naive-ui';
-import { computed } from 'vue';
+
 import { RouterLink } from 'vue-router';
 import { Heart, Home2, Menu2 } from '@vicons/tabler';
-import SearchBar from '../components/SearchBar.vue';
+
 import HeroGradient from '../assets/hero-gradient.svg?component';
 import MenuLayout from '../components/MenuLayout.vue';
 import NavbarButtons from '../components/NavbarButtons.vue';
@@ -84,9 +84,8 @@ const tools = computed<ToolCategory[]>(() => [
     </template>
 
     <template #content>
-      <div class="navigation">
+      <div flex items-center justify-center gap-2>
         <c-button
-          :size="styleStore.isSmallScreen ? 'medium' : 'large'"
           circle
           variant="text"
           aria-label="Toggle menu"
@@ -104,9 +103,11 @@ const tools = computed<ToolCategory[]>(() => [
           Home
         </n-tooltip>
 
-        <SearchBar />
+        <command-palette />
 
-        <NavbarButtons v-if="!styleStore.isSmallScreen" />
+        <div>
+          <NavbarButtons v-if="!styleStore.isSmallScreen" />
+        </div>
 
         <n-tooltip trigger="hover">
           <template #trigger>
@@ -204,27 +205,6 @@ const tools = computed<ToolCategory[]>(() => [
     .subtitle {
       font-size: 16px;
     }
-  }
-}
-
-// ::v-deep(.n-menu-item-content-header) {
-//   overflow: visible !important;
-//   // overflow-x: hidden !important;
-// }
-
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-
-  & > *:not(:last-child) {
-    margin-right: 5px;
-  }
-
-  .search-bar {
-    // width: 100%;
-    flex-grow: 1;
   }
 }
 </style>

@@ -1,6 +1,12 @@
 import { tool as base64FileConverter } from './base64-file-converter';
 import { tool as base64StringConverter } from './base64-string-converter';
 import { tool as basicAuthGenerator } from './basic-auth-generator';
+import { tool as passwordStrengthAnalyser } from './password-strength-analyser';
+import { tool as yamlToToml } from './yaml-to-toml';
+import { tool as jsonToToml } from './json-to-toml';
+import { tool as tomlToYaml } from './toml-to-yaml';
+import { tool as tomlToJson } from './toml-to-json';
+import { tool as jsonToCsv } from './json-to-csv';
 import { tool as cameraRecorder } from './camera-recorder';
 import { tool as listConverter } from './list-converter';
 import { tool as phoneParserAndFormatter } from './phone-parser-and-formatter';
@@ -32,6 +38,7 @@ import { tool as dateTimeConverter } from './date-time-converter';
 import { tool as deviceInformation } from './device-information';
 import { tool as cypher } from './encryption';
 import { tool as etaCalculator } from './eta-calculator';
+import { tool as percentageCalculator } from './percentage-calculator';
 import { tool as gitMemo } from './git-memo';
 import { tool as hashText } from './hash-text';
 import { tool as hmacGenerator } from './hmac-generator';
@@ -57,11 +64,12 @@ import { tool as urlEncoder } from './url-encoder';
 import { tool as urlParser } from './url-parser';
 import { tool as uuidGenerator } from './uuid-generator';
 import { tool as macAddressLookup } from './mac-address-lookup';
+import { tool as xmlFormatter } from './xml-formatter';
 
 export const toolsByCategory: ToolCategory[] = [
   {
     name: 'Crypto',
-    components: [tokenGenerator, hashText, bcrypt, uuidGenerator, cypher, bip39, hmacGenerator, rsaKeyPairGenerator],
+    components: [tokenGenerator, hashText, bcrypt, uuidGenerator, cypher, bip39, hmacGenerator, rsaKeyPairGenerator, passwordStrengthAnalyser],
   },
   {
     name: 'Converter',
@@ -75,8 +83,12 @@ export const toolsByCategory: ToolCategory[] = [
       caseConverter,
       textToNatoAlphabet,
       yamlToJson,
+      yamlToToml,
       jsonToYaml,
+      jsonToToml,
       listConverter,
+      tomlToJson,
+      tomlToYaml,
     ],
   },
   {
@@ -111,9 +123,11 @@ export const toolsByCategory: ToolCategory[] = [
       crontabGenerator,
       jsonViewer,
       jsonMinify,
+      jsonToCsv,
       sqlPrettify,
       chmodCalculator,
       dockerRunToDockerComposeConverter,
+      xmlFormatter,
     ],
   },
   {
@@ -122,7 +136,7 @@ export const toolsByCategory: ToolCategory[] = [
   },
   {
     name: 'Math',
-    components: [mathEvaluator, etaCalculator],
+    components: [mathEvaluator, etaCalculator, percentageCalculator],
   },
   {
     name: 'Measurement',

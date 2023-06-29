@@ -86,7 +86,7 @@ const countriesOptions = getCountries().map(code => ({
 <template>
   <div>
     <n-form-item label="Default country code:">
-      <n-select v-model:value="defaultCountryCode" :options="countriesOptions" />
+      <n-select v-model:value="defaultCountryCode" :options="countriesOptions" filterable />
     </n-form-item>
 
     <c-input-text
@@ -100,16 +100,14 @@ const countriesOptions = getCountries().map(code => ({
     <n-table v-if="parsedDetails">
       <tbody>
         <tr v-for="{ label, value } in parsedDetails" :key="label">
-          <td>
-            <n-text strong>
-              {{ label }}
-            </n-text>
+          <td font-bold>
+            {{ label }}
           </td>
           <td>
             <span-copyable v-if="value" :value="value" />
-            <n-text v-else depth="3" italic>
+            <span v-else op-70>
               Unknown
-            </n-text>
+            </span>
           </td>
         </tr>
       </tbody>
