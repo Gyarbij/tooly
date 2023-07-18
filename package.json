@@ -55,7 +55,7 @@
     "date-fns": "^2.30.0",
     "figue": "^1.2.0",
     "fuse.js": "^6.6.2",
-    "highlight.js": "^11.7.0",
+    "highlight.js": "^11.8.0",
     "iarna-toml-esm": "^3.0.5",
     "json5": "^2.2.3",
     "jwt-decode": "^3.1.2",
