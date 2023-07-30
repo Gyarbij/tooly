@@ -72,8 +72,8 @@ dependencies:
     specifier: ^6.6.2
     version: 6.6.2
   highlight.js:
-    specifier: ^11.7.0
-    version: 11.7.0
+    specifier: ^11.8.0
+    version: 11.8.0
   iarna-toml-esm:
     specifier: ^3.0.5
     version: 3.0.5
@@ -6120,8 +6120,8 @@ packages:
       tslib: 2.5.0
     dev: false
 
-  /highlight.js@11.7.0:
-    resolution: {integrity: sha512-1rRqesRFhMO/PRF+G86evnyJkCgaZFOI+Z6kdj15TA18funfoqJXvgPCLSf0SWq3SRfg1j3HlDs8o4s3EGq1oQ==}
+  /highlight.js@11.8.0:
+    resolution: {integrity: sha512-MedQhoqVdr0U6SSnWPzfiadUcDHfN/Wzq25AkXiQv9oiOO/sG0S7XkvpFIqWBl9Yq1UYyYOOVORs5UW2XlPyzg==}
     engines: {node: '>=12.0.0'}
     dev: false
 
@@ -7065,7 +7065,7 @@ packages:
       date-fns: 2.30.0
       date-fns-tz: 1.3.8(date-fns@2.30.0)
       evtd: 0.2.4
-      highlight.js: 11.7.0
+      highlight.js: 11.8.0
       lodash: 4.17.21
       lodash-es: 4.17.21
       seemly: 0.3.6
