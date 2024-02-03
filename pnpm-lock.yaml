@@ -147,8 +147,8 @@ dependencies:
     specifier: ^1.8.1
     version: 1.8.1(typescript@4.9.3)
   xml-formatter:
-    specifier: ^3.3.2
-    version: 3.3.2
+    specifier: ^3.6.0
+    version: 3.6.0
   yaml:
     specifier: ^2.3.1
     version: 2.3.1
@@ -9618,11 +9618,11 @@ packages:
         optional: true
     dev: true
 
-  /xml-formatter@3.3.2:
-    resolution: {integrity: sha512-ld34F1b7+2UQGNkfsAV4MN3/b7cdUstyMj3XJhzKFasOPtMToVCkqmrNcmrRuSlPxgH1K9tXPkqr75gAT3ix2g==}
+  /xml-formatter@3.6.0:
+    resolution: {integrity: sha512-Wic80ENNLF/5mLcc82hVLmoOWQlLDJtVv+N1/hkP4hBuVXPLKrXo92/4V23QYPKfUxvCU6Y2AcdpHCIA/xexFw==}
     engines: {node: '>= 14'}
     dependencies:
-      xml-parser-xo: 4.0.5
+      xml-parser-xo: 4.1.1
     dev: false
 
   /xml-name-validator@4.0.0:
@@ -9630,8 +9630,8 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /xml-parser-xo@4.0.5:
-    resolution: {integrity: sha512-UWXOHMQ4ySxpUiU3S/9KzPOhninlL8SN1xFfWgX9WjgoZWoLKtEeJIEz4jhKtdFsoZBCYjg9rDEP3qfnpiHagQ==}
+  /xml-parser-xo@4.1.1:
+    resolution: {integrity: sha512-Ggf2y90+Y6e9IK5hoPuembVHJ03PhDSdhldEmgzbihzu9k0XBo0sfcFxaSi4W1PlUSSI1ok+MJ0JCXUn+U4Ilw==}
     engines: {node: '>= 14'}
     dev: false
 
