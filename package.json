@@ -38,7 +38,7 @@
     "@sindresorhus/slugify": "^2.2.0",
     "@tiptap/pm": "^2.0.3",
     "@tiptap/starter-kit": "^2.0.3",
-    "@tiptap/vue-3": "^2.0.4",
+    "@tiptap/vue-3": "^2.1.13",
     "@vicons/material": "^0.12.0",
     "@vicons/tabler": "^0.12.0",
     "@vueuse/core": "^10.1.2",
