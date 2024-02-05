@@ -58,7 +58,7 @@
     "highlight.js": "^11.8.0",
     "iarna-toml-esm": "^3.0.5",
     "json5": "^2.2.3",
-    "jwt-decode": "^3.1.2",
+    "jwt-decode": "^4.0.0",
     "libphonenumber-js": "^1.10.28",
     "lodash": "^4.17.21",
     "mathjs": "^10.6.4",
